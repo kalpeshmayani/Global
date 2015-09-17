@@ -305,5 +305,13 @@ public class AppMethod {
 
 		return tDiffer;
 	}
+	
+	
+	// get current date and time (16-09-2015 18:27)
+	public static String getDateTime() {
+		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm");
+		Date date = new Date();
+		return dateFormat.format(date);
+    }
 
 }
