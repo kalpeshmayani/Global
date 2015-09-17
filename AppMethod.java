@@ -245,12 +245,12 @@ public class AppMethod {
 	}
     
 	
-	// return valid string else "-"
-    public static String getString(String text) {
+	// return valid string text else defaultText
+    public static String getString(String text, String defaultText) {
 		if(text != null && !text.equalsIgnoreCase("null") && !text.equalsIgnoreCase(""))
 			return text;
 		else
-			return "-";
+			return defaultText;
 	}
     
     
